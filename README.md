@@ -29,10 +29,30 @@ MQ 相当于一个中介 生产方通过MQ与消费方交互
 
 但是使用了MQ之后 限制消消息的速度为 1000 但是这样一来 高峰期产生的数据势必会被挤压在MQ中 高峰就被削掉了, 但是因为消息积压 在高峰期过后的一段时间内 消费消息的速度维持在1000 直到消费完积压的消息 这就叫填谷.
 
-## AMQP 和 JMS
+## AMQP(高级消息队列协议) 和 JMS
 
 MQ是消息通信的模型; 实现MQ的两种主流方式: AMQP JMS
 
 AMQP 是一种协议 更准确的说是一种 binary wire-level protocol (链接协议). 这是其和JMS的本质区别. AMQP不从API层进行限定 而是直接定义网络交换的数据格式
 
 JMS JMS就是Java 消息服务 应用程序接口. 是一个Java平台中关于面向消息中间件(MOM)的API 用于在两个程序之间 或分布式系统中发送消息 进行异步通信
+
+AMQP与JMS的区别
+
+JSM是定义了统一的接口 来对消息操作进行统一; AMQP是通过规定协议来统一数据交互的格式
+
+JMS限定了必须使用Java语言; AMQP只是协议 不规定实现方式 所以是夸语言的
+
+JMS贵定了两种消息模式 而AMQO的消息模式更加丰富
+
+消息队列产品:
+
+ActiveMQ 基于JMS
+
+RabbitMQ: 基于AMQP协议 erlang语言开发 稳定
+
+RocketMQ: 基于JMS 阿里巴巴产品
+
+Kafka: 类似MQ的产品 分布式消息系统 高吞吐量
+
+RabbitMQ提供了6种模式: 简单模式 work模式 Publish/Subscribe发布与订阅模式 Routing路由模式 Topics主题模式 RPC远程调用模式 
