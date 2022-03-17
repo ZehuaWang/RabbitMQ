@@ -33,4 +33,5 @@ MQ 相当于一个中介 生产方通过MQ与消费方交互
 
 MQ是消息通信的模型; 实现MQ的两种主流方式: AMQP JMS
 
-AMQP 是一种协议 更准确的说是一种 binary wire-level protocol (链接协议). 这是其和JMS的本质区别. AMQP不从
+AMQP 是一种协议 更准确的说是一种 binary wire-level protocol (链接协议). 这是其和JMS的本质区别. AMQP不从API
+
