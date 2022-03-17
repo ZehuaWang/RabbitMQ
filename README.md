@@ -26,3 +26,5 @@ MQ 相当于一个中介 生产方通过MQ与消费方交互
 这样慢慢写入数据库就不会卡死
 
 ![image](https://user-images.githubusercontent.com/40006814/158725819-b3011929-1997-4ea8-a039-3384c214e365.png)
+
+但是使用了MQ之后 限制消消息的速度为1
