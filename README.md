@@ -72,3 +72,10 @@ Publish / Subscribe Topics
 JMS Diagram
 
 ![image](https://user-images.githubusercontent.com/40006814/159546181-425a3366-e9be-4abd-a994-6b0c45575ef2.png)
+
+JMS Client: JAVA Application that using JMS
+JMS Provider: MEssaging System that handles routing & delivery messages
+JMS Application: Business System composed of many JMS clients, & usually one JMS provider
+Producer: JMS Client taht sends a message
+Consumer: JMS client that receives a message
+A JMS client can be both a producer and a consumer of messages
