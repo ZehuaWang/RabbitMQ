@@ -56,3 +56,18 @@ RocketMQ: 基于JMS 阿里巴巴产品
 Kafka: 类似MQ的产品 分布式消息系统 高吞吐量
 
 RabbitMQ提供了6种模式: 简单模式 work模式 Publish/Subscribe发布与订阅模式 Routing路由模式 Topics主题模式 RPC远程调用模式 
+
+## JMS 教程
+
+JMS -> JMS API provides vernder independent access to Enterprise Messaging Systems Like JBoss Messaging, WebSphere MQ
+
+BEW weblogic
+
+JAVA Messaging Service has 2 models:
+
+Point to Point Queues
+
+Publish / Subscribe Topics
+
+JMS Diagram
+
