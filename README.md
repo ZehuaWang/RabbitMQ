@@ -84,3 +84,9 @@ Producer: JMS Client taht sends a message
 Consumer: JMS client that receives a message
 
 A JMS client can be both a producer and a consumer of messages
+
+Publish/ Subscribe JMS Model
+
+![image](https://user-images.githubusercontent.com/40006814/159547688-1ea2c20b-5b0f-4a9d-9f85-692f518a5a83.png)
+
+Point 
