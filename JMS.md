@@ -27,3 +27,8 @@ not required to wait for the message to be received or handled by the recipient;
 Message-Oriented-MiddleWare
 
 ![Message-Oriented-MiddleWare](https://user-images.githubusercontent.com/40006814/160046542-00fa71da-bdfc-4220-9258-da5679fbe680.png)
+
+Messaging systems are composed of messaging clients and some kind of
+MOM. The clients send messages to the MOM, which then distributes those messages to
+other clients. The client is a business application or component that is using the messaging
+API (in our case JMS).
