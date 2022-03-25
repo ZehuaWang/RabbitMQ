@@ -24,3 +24,6 @@ A key concept of enterprise messaging is messages are delivered asynchronously f
 To deliver a message asynchronously means the sender is
 not required to wait for the message to be received or handled by the recipient; it is free to send the message and continue processing. Asynchronous messages are treated as autonomous units - each message is self-contained and carries all of the data and state needed by the business logic that processes it.
 
+Message-Oriented-MiddleWare
+
+![Message-Oriented-MiddleWare](https://user-images.githubusercontent.com/40006814/160046542-00fa71da-bdfc-4220-9258-da5679fbe680.png)
