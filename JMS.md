@@ -79,4 +79,28 @@ The point-to-point messaging model allos JMS clients to send and receive message
 
 A given queue may have multiple receivers, but only one receiver may consume each message. The JMS specification does not dictate the rules for distributing messages among multiple receivers, although some JMS vendors have chosen to implement this as a load balancing capability. P2p also offers other features, such as a queue browser that allows a client to view the contents of a queue prior ro consuming its message - this browser concept is not available in the pub/sub model.
 
+### Building Dynamic Systems with Messaging and JMS
 
+In JMS, pub/sub topics and p2p queues are centrally administered and are referred to as JMS administered objects. The application does not need to know the network location of topics or queue to communicate with other applications; it just uses topic and queue objects as identifiers. Using topics and queues provides JMS applications with a certain level of location transparency and flexibility that makes it possible to add and remove participants in an enterprise system.
+
+For example, a system administrator can dynamically add subscribers to specific topics on an as-needed basis. A common scenario might be if you discrover a need to add an auditrail mechanism for certian messages and not others. The figure shows you how to plug in a specialized auditing and logging JMS client whose only job is to track specific messages, just by subscribing to the topics you are interested in.
+
+The ability to add and remove producers and consumers allows enterprise system to dynamically alter the routing and re-routing of messages in an already deployed environment.
+
+![image](https://user-images.githubusercontent.com/40006814/160251679-322d8660-0728-4d6c-aff1-c4c50032428d.png)
+
+### Enterprise Messaging
+
+A fundamental concept of MOM is that communication between applications is intended to be asynchronous. Code that is written to connect the pieces together assumes there is a one-way message that requires no immediate response from another application. In other words, there is no blocking. Once a message is sent, the messaging client can move on to other tasks. It does not have to wait for a response. This is the major difference between RPC and asynchronous messaging, and is critical to understanding the advantages offered by MOM systems.
+
+In an asynchronous messaging system, each subsystem (Accounts, Inventory) is decoupled from the other systems. They communicate through the messaging server, so that a failure in one does not impede the operation of others.
+
+![image](https://user-images.githubusercontent.com/40006814/160251865-ce9b2d7e-e1d0-40b3-ab65-23fb01f61d16.png)
+
+Partial failure in a networked system is a fact of life. One of the systems may have an unpredictable failure or need to be shut down at some time during its continuous operation. In recognition of this, JMS provides guaranteed delivery, which ensures that intended consumers will eventually receive a message even if partial failure occurs.
+
+Guaranteed delivery uses a store-and-forward mechanism, which means that the underlying message server will write the incoming messages out to a presistent store if the intended consumers are not currently available. When the receiving applications become available at a later time, the sotre-and-forward mechanism will deliver all of the messages that the consumers missed while unavailable.
+
+![image](https://user-images.githubusercontent.com/40006814/160252031-f72217ff-53bc-4fa2-96c4-c86f8cb48387.png)
+
+To summarize, JMS is not just another event service. It was designed to cover a broad range of enterprise applications, including EAI, B2B, push models, etc. Through asynchronous processing, store-and-forward, and guaranteed delivery, it provides high availabilit y capabilities to keep business applications in continuous operation with uninterrupted service. It offers flexibility of integration by providing publish-and-subscribe and point-to-point functionality. Through location transparency and administrative control, it allows for a robust, service-based architecture. And most importantly, it is extremely easy to learn and use. In the next chapter we will take a look at how simple it is by building our first JMS application.
