@@ -32,3 +32,12 @@ Messaging systems are composed of messaging clients and some kind of
 MOM. The clients send messages to the MOM, which then distributes those messages to
 other clients. The client is a business application or component that is using the messaging
 API (in our case JMS).
+
+### Centralized Architectures
+
+Enterprise messaging system that use a centralized architecture rely on a message server. A message server, also called a message router or broker, is responsible for delivering message from one messaging client to other messaging clients. The message server decouples a sending client from other receiving clients. Clients only see the messaging server, not other clients, which allows clients to be added and removed without impacting the system as a whole.
+
+Typically, a centralized architecture uses a hub-and-spoke topology.
+
+![Centralized hub-and-spoke architecture](https://user-images.githubusercontent.com/40006814/160248774-9df41f59-ff7b-4e80-8357-08697a8bc747.png)
+
