@@ -52,3 +52,31 @@ All decentralized architectures currently use IP multicast at the network level.
 A decentralized architecture usually implies that an IP multicast protocol is being used. A centralized architecture usually implies that the TCP/IP protocol is the basis for communication between the various components. A messaging vendor's architecture may also combine the two approaches. Clients may connect to a daemon process using TCP/IP, which in turn communicate with other daemon process using IP multicast groups.
 
 In centralized architectures, the message server is a middleware server or cluster of servers. In decentralized architectures, the server refers to the local server-like facilities of the client.
+
+### The Java Message Service (JMS)
+
+The Java Message Service (JMS) is an API for enterprise messaging created by Sun Microsystems. JMS is not a messaging system itself; it is an abstraction of the interfaces and classes needed by messaging clients when communication with messaging systems. In the same way that JDBC abstract access to relational databases and JNDI abstract access to naming and directory services, JMS abstracts access to MOMs. Using JMS, a messaging application's messaging clients are portable across MOM products.
+
+### JMS Messaging Models: Publish-and-Subscribe and Point-to-Point
+
+JMS provides for two types of messaging models, publish-and-subscribe and point-to-point queueing. The JMS specification refers to these as messaging domains. 
+
+In the simplest sense, publish-and-subscibe is intended for a one-to-many broadcast of messages, while point-to-point is intended for one-to-one delivery of messages.
+
+![JMS messaging domains](https://user-images.githubusercontent.com/40006814/160250484-8c80ec4f-9b5a-40d9-9862-8f37a435fef3.png)
+
+Messaging clients in JMS are called JMS clients, and the messaging system - the MOM - is called the JMS provider. A JMS application is a business system composed of many JMS clients and, generally, one JMS provider.
+
+In addition, a JMS client that produces a message is called a producer, while a JMS client that receives a message is called a consumer. A JMS client can be both a producer and a consumer.
+
+### Publish-and-subscribe
+
+In pub/sub, one producer can send a message to many consumers through a virtual channel called a topic. Consumers, which receive messages, can choose to subscribe to a topic. Any messages addressed to a topic are delivered to all the topic's consumers. Every consumer receive a copy of each message. The pub/sub messaging model is by and large a push-based model, where messages are automatically broadcast to consumers without them having to request or poll the topic for new messages.
+
+### Point-to-point
+
+The point-to-point messaging model allos JMS clients to send and receive messages both synchronously and asynchronously via virtual channels known as queues. The p2p messaging model has traditionally been a pull or polling-based model, where messages are requested from the queue instead of being pushed to the client automatically. 
+
+A given queue may have multiple receivers, but only one receiver may consume each message. The JMS specification does not dictate the rules for distributing messages among multiple receivers, although some JMS vendors have chosen to implement this as a load balancing capability. P2p also offers other features, such as a queue browser that allows a client to view the contents of a queue prior ro consuming its message - this browser concept is not available in the pub/sub model.
+
+
