@@ -41,3 +41,14 @@ Typically, a centralized architecture uses a hub-and-spoke topology.
 
 ![Centralized hub-and-spoke architecture](https://user-images.githubusercontent.com/40006814/160248774-9df41f59-ff7b-4e80-8357-08697a8bc747.png)
 
+### Decentralized Architectures
+
+All decentralized architectures currently use IP multicast at the network level. A messaging system based on multicasting has no centralized server. Some of the server functionality(persistence, transactions, security) is embedded as a local part of the client, while message routing is delegated to the network layer by using the IP multicast protocol. IP multicast allows applications to join one or more IP multicast groups; each group uses an IP network address that will redistributed any messages it receives to all members in its group. In this way, applications can send messages to an IP multicast address and expect the network layer to redistributed the messages appropriately. 
+
+![Decentralized IP multicast architecture](https://user-images.githubusercontent.com/40006814/160249043-a1579b56-0a27-4fda-b7f8-72f1fa47c60c.png)
+
+### Hybrid Architectures
+
+A decentralized architecture usually implies that an IP multicast protocol is being used. A centralized architecture usually implies that the TCP/IP protocol is the basis for communication between the various components. A messaging vendor's architecture may also combine the two approaches. Clients may connect to a daemon process using TCP/IP, which in turn communicate with other daemon process using IP multicast groups.
+
+In centralized architectures, the message server is a middleware server or cluster of servers. In decentralized architectures, the server refers to the local server-like facilities of the client.
