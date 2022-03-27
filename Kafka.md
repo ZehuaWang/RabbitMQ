@@ -34,4 +34,4 @@ Open-sourced under Apache Foundation
 
 ## Getting to know Apache Kafka Architecture
 
-![image](https://user-images.githubusercontent.com/40006814/160300083-d93229e1-16cf-401e-aaa1-3723f778a5c8.png)
+![image](https://user-images.githubusercontent.com/40006814/160306159-6b6da249-35ff-4b66-b61a-0407db4be159.png)
