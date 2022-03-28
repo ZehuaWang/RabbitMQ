@@ -125,3 +125,5 @@ Retention period is configurable
   - Default is 168 hours or serven days
 
 Retention period is defined on a per-topic basis
+
+Physical storage resources can constrain message retention
