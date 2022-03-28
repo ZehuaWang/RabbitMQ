@@ -47,4 +47,10 @@ Open-sourced under Apache Foundation
 
 ![image](https://user-images.githubusercontent.com/40006814/160306708-f9b90fd4-6e03-4178-b116-a844f3500670.png)
 
+Distributed Systems: Communication and Consensus
+
+1. Worker node membership and naming
+2. Configuration management
+3. Leader election
+4. Health status
 
