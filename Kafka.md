@@ -80,3 +80,22 @@ Characteristics of distributed systems:
 - Consensus-based communication
 
 Role of Apache Zookeeper
+
+## Getting Started with Apache Kafka
+
+Apache Kafka Topics
+
+Central Kafka abstraction
+
+Named feed or category of messages
+
+- Producers produce to a topic
+- Consumers consume from a topic
+
+Logical entity
+
+Physically reprensented as a log
+
+![image](https://user-images.githubusercontent.com/40006814/160473714-aefe524c-8719-4321-b373-a4ff84eadc3d.png)
+
+![image](https://user-images.githubusercontent.com/40006814/160473840-f94b2e72-5bcb-4edb-b816-6c3c61e80e64.png)
