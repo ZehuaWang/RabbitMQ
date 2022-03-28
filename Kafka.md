@@ -99,3 +99,7 @@ Physically reprensented as a log
 ![image](https://user-images.githubusercontent.com/40006814/160473714-aefe524c-8719-4321-b373-a4ff84eadc3d.png)
 
 ![image](https://user-images.githubusercontent.com/40006814/160473840-f94b2e72-5bcb-4edb-b816-6c3c61e80e64.png)
+
+Event Sourcing
+
+An architectural style or approach to maintaining an application's state by capturing all changes as a sequence of time-ordered, immutable events.
