@@ -67,3 +67,16 @@ Hadoop, HBase, Solr, Redis and Neo4j
 Distributed system consisting of multiple nodes in an "ensemble"
 
 ![image](https://user-images.githubusercontent.com/40006814/160307044-386eb2ec-45fc-43dc-ab6c-42a2429cbca3.png)
+
+Summary:
+
+Apache Kafka is a Pub-Sub messaging system, consisting of:
+- Producers and Consumers
+- Brokers within a Cluster
+
+Characteristics of distributed systems:
+- Worker node roles: Controllers, Leaders, and Followers
+- Reliability through replication
+- Consensus-based communication
+
+Role of Apache Zookeeper
