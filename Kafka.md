@@ -66,3 +66,4 @@ Hadoop, HBase, Solr, Redis and Neo4j
 
 Distributed system consisting of multiple nodes in an "ensemble"
 
+![image](https://user-images.githubusercontent.com/40006814/160307044-386eb2ec-45fc-43dc-ab6c-42a2429cbca3.png)
