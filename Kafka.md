@@ -54,3 +54,15 @@ Distributed Systems: Communication and Consensus
 3. Leader election
 4. Health status
 
+Apache Zookeeper
+
+Centralized service for maintaning metadata about a cluster of distributed nodes
+
+- Configuration information
+- Health status
+- Group membership
+
+Hadoop, HBase, Solr, Redis and Neo4j
+
+Distributed system consisting of multiple nodes in an "ensemble"
+
