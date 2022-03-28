@@ -103,3 +103,25 @@ Physically reprensented as a log
 Event Sourcing
 
 An architectural style or approach to maintaining an application's state by capturing all changes as a sequence of time-ordered, immutable events.
+
+Each message has a:
+
+- Timestamp
+- Referenceable identifier
+- Payload (binary)
+
+The Offset
+
+A placeholder:
+- Last read message position
+- Maintained by the Kafka Consumer
+- Corresponds to the messaging identifier
+
+Message Retention Policy
+
+Apache Kafka retains all published messages regardless of consumption
+
+Retention period is configurable
+  - Default is 168 hours or serven days
+
+Retention period is defined on a per-topic basis
