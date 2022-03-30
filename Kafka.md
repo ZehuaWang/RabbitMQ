@@ -127,3 +127,14 @@ Retention period is configurable
 Retention period is defined on a per-topic basis
 
 Physical storage resources can constrain message retention
+
+Kafka Partitions:
+
+![image](https://user-images.githubusercontent.com/40006814/160911730-4b112ed6-bb24-4aea-9015-936bdc964467.png)
+
+![image](https://user-images.githubusercontent.com/40006814/160912138-2d510b47-bb8d-4486-9e29-649861724f56.png)
+
+In general, the scalability of Apache Kafka is determined by the number of partitions being managed by multiple broker nodes.
+
+![image](https://user-images.githubusercontent.com/40006814/160912617-c1512ce0-85e2-444e-b8ca-0b88c43741a2.png)
+
