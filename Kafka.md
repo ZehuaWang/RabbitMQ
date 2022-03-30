@@ -159,3 +159,11 @@ Message ordering can become complex
 - Consumer-handling for ordering
 
 The more partitions the longer the leader fail-over time
+
+What about fault-tolerance ? 
+
+- Broker failure
+- Network issue
+- Disk failure
+
+![image](https://user-images.githubusercontent.com/40006814/160930500-b8b2e35b-82ef-4b74-9713-faeb7c78f83f.png)
