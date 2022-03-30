@@ -138,3 +138,11 @@ In general, the scalability of Apache Kafka is determined by the number of parti
 
 ![image](https://user-images.githubusercontent.com/40006814/160912617-c1512ce0-85e2-444e-b8ca-0b88c43741a2.png)
 
+With 3 partitions, we are causing a single topic to be split across three different log fiels. Ideally managed by three different broker nodes. Each partition is mutually exclusive from one another in that they receive unique messages from a Kafka producer producing on the same topic. This enables each partition to share the burden of the message load across multiple broker nodes and increase the parallelism of certain operations like message consumption. 
+
+![image](https://user-images.githubusercontent.com/40006814/160913278-6bb919e0-830b-4e78-9bb1-8c9ce32c5427.png)
+
+With 3 partitions, we are causing a single topic to be split across three different log fiels. Ideally managed by three different broker nodes. Each partition is mutually exclusive from one another in that they receive unique messages from a Kafka producer producing on the same topic. This enables each partition to share the burden of the message load across multiple broker nodes and increase the parallelism of certain operations like message consumption. 
+
+
+
