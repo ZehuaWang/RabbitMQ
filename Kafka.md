@@ -146,3 +146,16 @@ With 3 partitions, we are causing a single topic to be split across three differ
 
 
 ![image](https://user-images.githubusercontent.com/40006814/160926843-180b6f16-a280-420a-99f7-9eee37b211d5.png)
+
+Partition Trade-offs
+
+The more partitions the greater the Zookeeper overhead
+
+- With large partition numbers ensure proper ZK capacity
+
+Message ordering can become complex
+
+- Single partition for global ordering
+- Consumer-handling for ordering
+
+The more partitions the longer the leader fail-over time
