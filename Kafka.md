@@ -145,4 +145,4 @@ With 3 partitions, we are causing a single topic to be split across three differ
 With 3 partitions, we are causing a single topic to be split across three different log fiels. Ideally managed by three different broker nodes. Each partition is mutually exclusive from one another in that they receive unique messages from a Kafka producer producing on the same topic. This enables each partition to share the burden of the message load across multiple broker nodes and increase the parallelism of certain operations like message consumption. 
 
 
-
+![image](https://user-images.githubusercontent.com/40006814/160926843-180b6f16-a280-420a-99f7-9eee37b211d5.png)
