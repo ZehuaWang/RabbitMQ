@@ -167,3 +167,22 @@ What about fault-tolerance ?
 - Disk failure
 
 ![image](https://user-images.githubusercontent.com/40006814/160930500-b8b2e35b-82ef-4b74-9713-faeb7c78f83f.png)
+
+Replication Factor
+
+Reliable work distribution
+
+- Redundancy of messages
+- Cluster resiliency
+- Fault-tolerance
+
+Guarantees
+
+- N-1 broker failure tolerance
+- 2 or 3 minimum
+
+Configured on a pre-topic basis
+
+![image](https://user-images.githubusercontent.com/40006814/160932375-80cfbe6c-0a2f-46a5-a18a-f356ef727be0.png)
+
+Configured on a pre-topic basis
